@@ -9,7 +9,7 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between px-6 py-4 shadow-md bg-white sm:bg-violet-100">
+    <nav className="flex items-center justify-between px-6 py-6  bg-violet-100 border-b-1">
       {/* Left - Logo */}
       <div className="flex items-center space-x-2">
         <div className="flex">
@@ -29,14 +29,17 @@ export const Navbar = () => {
 
       {/* Mobile Menu Toggle */}
       <div className="sm:hidden">
-        <button onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <Minus size={35} /> : <Plus size={35} />}
+        <button
+          className="cursor-pointer"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <Minus size={40} /> : <Plus size={40} />}
         </button>
       </div>
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className="absolute right-2 top-16 bg-white shadow-md pl-4  flex flex-col sm:hidden w-full">
+        <div className="absolute right-2 top-22 bg-white shadow-md pl-4  flex flex-col sm:hidden w-full">
           <NavLink />
         </div>
       )}
