@@ -26,6 +26,22 @@ export default function AboutPage() {
         imageWidthClasses="lg:w-2/3 sm:w-1/2"
         contentWidthClasses="md:w-1/2 lg:w-1/3"
       />
+
+      <div className="relative w-full h-[400px] md:h-[400px] lg:h-[500px]">
+        {/* Full-width Image */}
+        <img
+          src="https://appeal-rice-stuff.figma.site/_assets/v9/791bae17ad08baae9fda5aa37defc5633c7d757e.png?w=1024"
+          alt="Reconnect"
+          className="w-full h-full object-cover"
+        />
+
+        {/* Bottom Left Text Overlay */}
+        <div className="absolute bottom-6 left-4 md:bottom-10 md:left-10 lg:left-13 text-white">
+          <p className="text-2xl lg:text-4xl font-bold lg:max-w-[52%] md:max-w-[90%] max-w-[90%]">
+            {`WE'HE CREATED A SPACE WHERE YOU CAN RECONNECT WITH YOUR PRIMAL SELF.`}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

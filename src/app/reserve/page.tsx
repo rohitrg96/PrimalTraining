@@ -1,8 +1,14 @@
+import { ClassCardsSection } from "@/components/reserve/ClassCardsSection";
+
 export default function ReservePage() {
   return (
     <div>
-      <h1 className="text-3xl font-bold">Reserve Your Spot</h1>
-      <p className="mt-4">Secure your training session with us today!</p>
+      {/* Top Heading */}
+      <h1 className="text-4xl md:text-[90px] font-extrabold pl-8 py-5">
+        <span className="text-black">BOOK A</span>{" "}
+        <span className="text-violet-400">SESSION</span>
+      </h1>
+      <ClassCardsSection />
     </div>
   );
 }
