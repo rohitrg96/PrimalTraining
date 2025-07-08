@@ -126,73 +126,8 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="w-full h-110 bg-violet-400 flex flex-col items-center justify-center text-center py-12 space-y-5">
-        {/* Heading */}
-        <h2 className="md:text-lg">WHAT WE BELIEVE IN</h2>
 
-        {/* Subheading */}
-        <p className="text-4xl md:text-5xl font-bold">
-          JOIN THE PRIMAL TRIBE TODAY!
-        </p>
-
-        {/* Button */}
-        <button className="mt-4 px-6 py-3 uppercase bg-white text-black font-semibold hover:bg-black hover:text-white transition  border-black rounded-xl">
-          Reserve Your Spot
-        </button>
-      </div>
-
-      {/* Wrapper Section */}
       {/* Card Container */}
-      <div className="w-full bg-violet-100 text-black p-6 flex flex-col justify-between h-full min-h-[400px]">
-        {/* Top Section - Logo and Brand */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-          {/* Logo */}
-          <div className="flex items-center space-x-4">
-            <div className="flex">
-              <span className="h-16 w-8 rounded-l-full bg-black mt-4"></span>
-
-              <span className="h-20 w-10 rounded-l-full bg-black mt-2"></span>
-
-              <span className="h-24 w-24 rounded-full bg-black"></span>
-            </div>
-          </div>
-
-          {/* Brand */}
-          <h2 className="text-5xl font-bold mt-4 md:mt-0">PrimalTraining</h2>
-        </div>
-
-        {/* Spacer to push bottom content down */}
-        <div className="flex-grow"></div>
-
-        {/* Bottom Section - Three Columns */}
-        {/* Bottom Section - Three Columns */}
-        <div className="flex flex-col md:flex-row md:justify-between w-full text-left mt-6 space-y-6 md:space-y-0">
-          {/* Left Column */}
-          <div className="w-full md:w-1/3">
-            <h3 className="text-lg font-semibold">CONTACT</h3>
-            <p className="font-semibold">Email: hello@figma.com </p>
-            <p className="font-semibold">Phone: (203) 555-5555</p>
-          </div>
-
-          {/* Center Column */}
-          <div className="w-full md:w-1/3 md:text-center">
-            <h3 className="text-lg font-semibold">Opening Hours</h3>
-            <p className="font-semibold">MON – FRI: 5:00 – 23:00</p>
-            <p className="font-semibold">SATURDAYS: 8:00 – 16:00</p>
-            <p className="font-semibold">SUNDAYS: 8:00 – 13:00</p>
-            <p className="font-semibold">HOLIDAYS: 8:00 – 16:00</p>
-          </div>
-
-          {/* Right Column */}
-          <div className="w-full md:w-1/3  md:text-right text-left">
-            <h3 className="text-lg font-semibold">Social</h3>
-            <p className="font-semibold">Instagram</p>
-            <p className="font-semibold">X</p>
-            <p className="font-semibold">LinkedIn</p>
-            <p className="font-semibold">Spotify</p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
