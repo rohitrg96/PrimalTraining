@@ -38,7 +38,7 @@ export default function AboutPage() {
         {/* Bottom Left Text Overlay */}
         <div className="absolute bottom-6 left-4 md:bottom-10 md:left-10 lg:left-13 text-white">
           <p className="text-2xl lg:text-4xl font-bold lg:max-w-[52%] md:max-w-[90%] max-w-[90%]">
-            WE'HE CREATED A SPACE WHERE YOU CAN RECONNECT WITH YOUR PRIMAL SELF.
+            {`WE'HE CREATED A SPACE WHERE YOU CAN RECONNECT WITH YOUR PRIMAL SELF.`}
           </p>
         </div>
       </div>
