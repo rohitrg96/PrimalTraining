@@ -22,12 +22,12 @@ export const Navbar = () => {
       </div>
 
       {/* Right - Buttons for sm and above */}
-      <div className="hidden sm:flex space-x-8">
+      <div className="hidden lg:flex space-x-8">
         <NavLink />
       </div>
 
       {/* Mobile Menu Toggle */}
-      <div className="sm:hidden">
+      <div className="lg:hidden">
         <button
           className="cursor-pointer"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -38,7 +38,7 @@ export const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className="absolute right-2 top-22 bg-white shadow-md pl-4  flex flex-col sm:hidden w-full">
+        <div className="absolute right-2 top-22 bg-white shadow-md pl-4  flex flex-col lg:hidden w-full">
           <NavLink />
         </div>
       )}
