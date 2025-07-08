@@ -1,3 +1,5 @@
+import { InfoCard } from "@/components/home/InfoCard";
+
 export default function HomePage() {
   return (
     <div>
@@ -19,15 +21,11 @@ export default function HomePage() {
         </div>
 
         {/* Text - 1/3 */}
-        <div className="md:w-1/3 w-full p-4 flex flex-col md:min-h-[450px]">
-          <h2 className="sm:text-4xl text-2xl font-bold sm:w-8/12 w-full">
-            FOR THE COMMITTED
-          </h2>
-
-          {/* Push this paragraph to the bottom */}
-          <p className="text-gray-700 mt-auto">
-            {`Train like an athlete with top-tier equipment and expert programming. Whether you're building muscle or breaking PRs, we help you push past limits.`}
-          </p>
+        <div className="md:w-1/3 w-full">
+          <InfoCard
+            title="FOR THE COMMITTED"
+            description={`Train like an athlete with top-tier equipment and expert programming. Whether you're building muscle or breaking PRs, we help you push past limits.`}
+          />
         </div>
       </div>
 
@@ -43,28 +41,18 @@ export default function HomePage() {
         </div>
 
         {/* Guided by Experts */}
-        <div className="order-2 md:order-1 p-4 pb-1 bg-violet-100 border-r flex flex-col h-full border-b">
-          <h3 className="sm:text-5xl text-2xl font-bold ">GUIDED BY EXPERTS</h3>
-          <div className="mt-auto sm:w-11/12 w-full">
-            <p className="text-gray-700 mb-9">
-              {` We believe in creating a positive environment where you can
-              thrive. We're here to help you achieve your goals and unlock your
-              full potential.`}
-            </p>
-          </div>
-        </div>
+        <InfoCard
+          title="GUIDED BY EXPERTS"
+          description={`We believe in creating a positive environment where you can thrive. We're here to help you achieve your goals and unlock your full potential.`}
+          className="border-r border-b order-2 md:order-1"
+        />
 
         {/* Dynamic Open Gym */}
-        <div className="order-3 md:order-2 p-4  bg-violet-100 flex flex-col h-full">
-          <h3 className="sm:text-5xl text-2xl font-bold ">DYNAMIC OPEN GYM</h3>
-          <div className="mt-auto mb-1 sm:w-11/12 w-full">
-            <p className="text-gray-700 mt-auto">
-              Our facility is the optimal environment for strength training and
-              performance, fully equipped with top-of-the-line tools, ample
-              training areas, and a focus on functional movement.
-            </p>
-          </div>
-        </div>
+        <InfoCard
+          title="DYNAMIC OPEN GYM"
+          description={`Our facility is the optimal environment for strength training and performance, fully equipped with top-of-the-line tools, ample training areas, and a focus on functional movement.`}
+          className="order-3 md:order-2"
+        />
       </div>
 
       <h1 className="sm:text-4xl text-3xl md:text-[90px] font-extrabold sm:pl-8 pl-3 py-5">
@@ -72,17 +60,17 @@ export default function HomePage() {
         <span className="text-violet-400">COMMUNITY</span>
       </h1>
       <div className="flex flex-col md:flex-row w-full bg-violet-50">
-        {/* Image - 2/3 - Comes First on sm, Last on md+ */}
-        <div className="md:w-2/3 w-full order-1 md:order-2 h-400px">
+        {/* Image - responsive sizing */}
+        <div className="w-full md:w-1/2 lg:w-2/3 order-1 md:order-2">
           <img
             src="https://appeal-rice-stuff.figma.site/_assets/v9/c695b3171f8fc21be9574c7eeb04e5365a7dd496.png"
             alt="Training Image"
-            className="w-full h-auto"
+            className="w-full h-full object-cover"
           />
         </div>
 
-        {/* Text - 1/3 */}
-        <div className="md:w-1/3 w-full order-2 md:order-1 flex flex-col justify-between border-1">
+        {/* Text Content */}
+        <div className="w-full md:w-1/2 lg:w-1/3 order-2 md:order-1 flex flex-col justify-between border-1">
           {/* Row 1 */}
           <div className="border-b p-4">
             <h2 className="sm:text-4xl text-2xl font-bold">
@@ -101,7 +89,7 @@ export default function HomePage() {
           {/* Row 3 */}
           <div className="border-b p-4 space-y-2">
             <h3 className="sm:text-2xl text-xl font-bold">
-              RESULTS-DRIVEN PROGRAMS{" "}
+              RESULTS-DRIVEN PROGRAMS
             </h3>
             <p className="text-gray-700 text-lg">
               Workouts that deliver tangible, measurable results.
