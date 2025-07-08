@@ -22,9 +22,9 @@ export default function HomePage() {
         <div className="md:w-1/3 w-full p-4 flex flex-col h-full">
           <h2 className="text-4xl font-bold w-8/12">FOR THE COMMITTED</h2>
           <p className="text-gray-700 mt-auto">
-            Train like an athlete with top-tier equipment and expert
+            {`Train like an athlete with top-tier equipment and expert
             programming. Whether you're building muscle or breaking PRs, we help
-            you push past limits.
+            you push past limits.`}
           </p>
         </div>
       </div>
@@ -45,9 +45,9 @@ export default function HomePage() {
           <h3 className="text-5xl font-bold">GUIDED BY EXPERTS</h3>
           <div className="mt-auto w-11/12">
             <p className="text-gray-700 mb-7">
-              We believe in creating a positive environment where you can
+              {` We believe in creating a positive environment where you can
               thrive. We're here to help you achieve your goals and unlock your
-              full potential.
+              full potential.`}
             </p>
           </div>
         </div>

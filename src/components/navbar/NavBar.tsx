@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
-import Link from "next/link";
 import { NavLink } from "./NavLink";
 
 export const Navbar = () => {
