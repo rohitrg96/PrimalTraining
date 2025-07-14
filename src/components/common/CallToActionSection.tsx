@@ -1,16 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-
-interface CallToActionSectionProps {
-  heading: string;
-  subheading: string;
-  buttonText: string;
-  bgColor?: string;
-  btnBgColor?: string;
-  btnTextColor?: string;
-  buttonLink?: string; // e.g. "/reserve"
-}
+import { CallToActionSectionProps } from '@/types/types';
 
 export const CallToActionSection = ({
   heading,

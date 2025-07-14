@@ -1,4 +1,5 @@
 import { AppImage } from '../common/AppImage';
+import { JOIN_COMMUNITY_FEATURES } from '@/const/home';
 
 export const JoinCommunitySection = () => (
   <>
@@ -15,34 +16,12 @@ export const JoinCommunitySection = () => (
         />
       </div>
       <div className="w-full md:w-1/2 lg:w-1/3 order-2 md:order-1 flex flex-col justify-between border-1">
-        {[
-          {
-            title: 'DISCOVER YOUR POTENTIAL',
-            description: '',
-            border: 'border-b p-4',
-          },
-          {
-            title: 'EXPERT COACHING',
-            description: 'Trainers who are passionate about your progress.',
-            border: 'border-b p-3 space-y-1',
-          },
-          {
-            title: 'RESULTS-DRIVEN PROGRAMS',
-            description: 'Workouts that deliver tangible, measurable results.',
-            border: 'border-b p-4 space-y-2',
-          },
-          {
-            title: 'A SUPPORTIVE TRIBE',
-            description: 'A community that pushes you to be your best.',
-            border: 'border-b p-4 space-y-2',
-          },
-        ].map(({ title, description, border }, index) => (
-          <div className={border} key={index}>
+        {JOIN_COMMUNITY_FEATURES.map(({ title, description, className }, index) => (
+          <div className={className} key={index}>
             <h3 className="sm:text-2xl text-xl font-bold">{title}</h3>
             {description && <p className="text-gray-700 text-lg">{description}</p>}
           </div>
         ))}
-
         <div className="p-4">
           <button className="hover:bg-black text-gray-500 px-4 py-2 font-semibold hover:border hover:text-white border-black transition rounded-lg">
             VIEW CLASSES

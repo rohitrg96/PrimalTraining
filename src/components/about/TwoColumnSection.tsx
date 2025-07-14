@@ -1,15 +1,5 @@
 import { AppImage } from '../common/AppImage';
-
-interface TwoColumnSectionProps {
-  title: string;
-  subtitle?: string;
-  content: string;
-  imageUrl: string;
-  reverse?: boolean; // true = image on left
-  bgColor?: string;
-  imageWidthClasses?: string; // e.g. "md:w-1/3 lg:w-2/3"
-  contentWidthClasses?: string; // e.g. "md:w-2/3 lg:w-1/3"
-}
+import { TwoColumnSectionProps } from '@/types/types';
 
 export const TwoColumnSection = ({
   title,

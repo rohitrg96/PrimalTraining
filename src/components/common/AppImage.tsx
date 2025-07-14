@@ -1,14 +1,5 @@
 import Image from 'next/image';
-
-type AppImageProps = {
-  src: string;
-  alt: string;
-  className?: string;
-  width?: number;
-  height?: number;
-  fill?: boolean;
-  priority?: boolean;
-};
+import { AppImageProps } from '@/types/types';
 
 export const AppImage = ({
   src,
