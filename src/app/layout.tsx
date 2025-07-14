@@ -1,12 +1,12 @@
-import "./globals.css";
-import { ReactNode } from "react";
-import { Navbar } from "@/components/navbar/NavBar";
-import { Footer } from "@/components/footer/Footer";
-import { CallToActionSection } from "@/components/common/CallToActionSection";
+import './globals.css';
+import { ReactNode } from 'react';
+import { Navbar } from '@/components/navbar/NavBar';
+import { Footer } from '@/components/footer/Footer';
+import { CallToActionSection } from '@/components/common/CallToActionSection';
 
 export const metadata = {
-  title: "PrimalTraining",
-  description: "Train with us to reach your peak.",
+  title: 'PrimalTraining',
+  description: 'Train with us to reach your peak.',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

@@ -1,4 +1,5 @@
-import { TwoColumnSection } from "@/components/about/TwoColumnSection";
+import { TwoColumnSection } from '@/components/about/TwoColumnSection';
+import { AppImage } from '@/components/common/AppImage';
 
 export default function AboutPage() {
   return (
@@ -29,7 +30,7 @@ export default function AboutPage() {
 
       <div className="relative w-full h-[400px] md:h-[400px] lg:h-[500px]">
         {/* Full-width Image */}
-        <img
+        <AppImage
           src="https://appeal-rice-stuff.figma.site/_assets/v9/791bae17ad08baae9fda5aa37defc5633c7d757e.png?w=1024"
           alt="Reconnect"
           className="w-full h-full object-cover"
