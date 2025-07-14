@@ -6,10 +6,10 @@ interface FooterProps {
 }
 
 export const Footer = ({
-  bgColor = "bg-violet-100",
-  brandName = "PrimalTraining",
-  contactEmail = "hello@figma.com",
-  contactPhone = "(203) 555-5555",
+  bgColor = 'bg-violet-100',
+  brandName = 'PrimalTraining',
+  contactEmail = 'hello@figma.com',
+  contactPhone = '(203) 555-5555',
 }: FooterProps) => {
   return (
     <footer

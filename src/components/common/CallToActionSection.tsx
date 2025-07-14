@@ -1,25 +1,16 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-
-interface CallToActionSectionProps {
-  heading: string;
-  subheading: string;
-  buttonText: string;
-  bgColor?: string;
-  btnBgColor?: string;
-  btnTextColor?: string;
-  buttonLink?: string; // e.g. "/reserve"
-}
+import Link from 'next/link';
+import { CallToActionSectionProps } from '@/types/types';
 
 export const CallToActionSection = ({
   heading,
   subheading,
   buttonText,
-  bgColor = "bg-violet-400",
-  btnBgColor = "bg-white",
-  btnTextColor = "text-black",
-  buttonLink = "/",
+  bgColor = 'bg-violet-400',
+  btnBgColor = 'bg-white',
+  btnTextColor = 'text-black',
+  buttonLink = '/',
 }: CallToActionSectionProps) => {
   return (
     <div

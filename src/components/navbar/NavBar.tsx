@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { Plus, Minus } from "lucide-react";
-import { NavLink } from "./NavLink";
+import { useState } from 'react';
+import { Plus, Minus } from 'lucide-react';
+import { NavLink } from './NavLink';
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,18 +28,15 @@ export const Navbar = () => {
 
       {/* Mobile Menu Toggle */}
       <div className="lg:hidden">
-        <button
-          className="cursor-pointer"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
+        <button className="cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <Minus size={40} /> : <Plus size={40} />}
         </button>
       </div>
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className="absolute right-2 top-22 bg-white shadow-md pl-4  flex flex-col lg:hidden w-full">
-          <NavLink />
+        <div className="absolute right-2 top-22 bg-white shadow-md pl-4  flex flex-col lg:hidden w-full z-50">
+          <NavLink setMenuOpen={setMenuOpen} />
         </div>
       )}
     </nav>
