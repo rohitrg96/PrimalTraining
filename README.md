@@ -7,7 +7,6 @@ The application is **deployed on Vercel**.
 
 👉 [Visit PrimalTraining](https://your-vercel-app-url.vercel.app)
 
----
 
 ## 🛠️ Tech Stack
 
